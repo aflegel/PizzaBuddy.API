@@ -2,6 +2,9 @@
 	"author": "BoutinFlegel",
 	"main": "server.js",
 	"dependencies": {
+		"@babel/cli": "^7.4.3",
+		"@babel/core": "^7.4.3",
+		"@babel/preset-env": "^7.4.3",
 		"eslint": "^5.16.0",
 		"ws": "^6.2.1"
 	},
@@ -11,7 +14,8 @@
 	"name": "boutinflegel-pizza-buddy-api",
 	"private": true,
 	"scripts": {
-		"start": "node server.js"
+		"build": "babel server.js -d dist",
+		"start": "npm run build && node dist/server.js"
 	},
 	"engines": {
 		"node": "10.x"
