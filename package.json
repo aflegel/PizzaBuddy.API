@@ -1,0 +1,19 @@
+{
+	"author": "BoutinFlegel",
+	"main": "server.js",
+	"dependencies": {
+		"ws": "^6.2.1"
+	},
+	"description": "API for pizza buddy",
+	"keywords": [],
+	"license": "MIT",
+	"name": "boutinflegel-pizza-buddy-api",
+	"private": true,
+	"scripts": {
+		"start": "node server.js"
+	},
+	"engines": {
+		"node": "10.x"
+	},
+	"version": "1.0.0"
+}
